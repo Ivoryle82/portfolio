@@ -12,15 +12,10 @@ function About() {
               <img src= {require("../assets/images/portrait.jpg")} alt="Ivory Le" />
             </div>
             <div className="about-text">
-              <p>Hi there,
-                I'm Ivory Le, or as my nickname goes - Bong. Welcome to QuaMatBong, which means "Through Ivory Eyes." This is more than just a platform—it's my canvas. It's where I get to share my story with you.
-              </p>
-              <p>
-                Growing up in the heart of Hanoi, Vietnam, life was a vibrant tapestry of sights, sounds, and smells. Surrounded by the hustle and bustle of the city, I found solace in the simple things: the wagging tails of my two beloved puppies, the comforting aroma wafting from my family's coffee shop, and the fresh flowers my mom brought home every morning.
-              </p>
-              <p>
-                In these moments, I learned the art of appreciation. I learned to see beauty in the everyday, to cherish the small joys that make life so precious. And from a young age, I knew I wanted to capture it all.
-              </p>
+            <p>
+              Hi! My name is Ivory. You’ve probably already read my resume or found me through LinkedIn. Either way, this platform was originally built as my photo gallery—you should definitely check it out! I love taking street photography and capturing moments with my beloved ones. I travel a lot, so this is also a way for me to revive those memories. Besides that, I also have a workspace that archives my previous projects. Let’s get in touch if you think any of this sounds cool!
+            </p>
+            <p> Oh I also love music, i put my playlist down there, if it is your vibe, hit the button and i might be able to recommend you some songs based on my still-working-on algorithm :)</p>
             </div>
           </div>
         </div>

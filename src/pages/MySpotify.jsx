@@ -9,14 +9,14 @@ function MySpotifyPlaylist() {
         {/* Embed Spotify Playlist */}
         <iframe
           title="Hibiki 30s"
-          src="https://open.spotify.com/embed/playlist/0mmtcM3w5OiGMCQFnvk9Wf?utm_source=generator"
+          src="https://open.spotify.com/embed/playlist/6HiidJWEpLnnAuFHy3ukPN?utm_source=generator"
           width="100%"
           height="380"
           frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
         ></iframe>
-
+      
         {/* Prompt and button to connect on Spotify */}
         <div className="spotify-connect">
           <a href="https://ivoryle82.github.io/portfolio/compatibility" className="spotify-button" id="spotify-login-button">

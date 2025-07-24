@@ -10,7 +10,7 @@ import {
 } from '../services/spotifyApi';
 
 function OurCompatibility() {
-  const clientId = "b4c01840ec424a1aa275703fc29b8fac";
+  const clientId = "d3b824088f9647a3af287ff131972abc";
   const [profile, setProfile] = useState(null);
   const [playlists, setPlaylists] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
