@@ -4,7 +4,7 @@ import '../styles/about.css'; // Assuming you have a CSS file for styling
 function About() {
   return (
     <div>
-      <main className="main-content">
+      <main className="main-content-about">
         <div className="about-container">
           <h1>About Me</h1>
           <div className="about-content">
