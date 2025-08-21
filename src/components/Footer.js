@@ -5,7 +5,7 @@ import '../styles/footer.css'
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2024 QuaMatBong. All rights reserved.</p>
+      <p>&copy; Made with love {"<3"} from Ivory.</p>
     </footer>
   );
 }

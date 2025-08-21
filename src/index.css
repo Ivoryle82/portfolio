@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Luxurious+Script&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Luxurious+Script&family=Monoton&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Luxurious+Script&family=Monoton&family=Silkscreen:wght@400;700&family=Teko:wght@300..700&display=swap');
+
+/* Theme Palette */
+:root {
+    /* Primary Colors */
+    --color-primary: #D43996;        /* Pink / Fuchsia */
+    --color-secondary: #9ED36C;      /* Light Green */
+    --color-accent: #60B0FF;         /* Blue */
+    --color-highlight: #7BFF60;      /* Neon Green */
+    --color-dark: #000000;            /* Black */
+    --color-light: #ffffff;           /* White */
+    --color-muted: #f0f0f0;           /* Light Gray for backgrounds */
+  
+    /* Background Colors */
+    --bg-main: var(--color-dark);
+    --bg-section-green: var(--color-secondary);
+    --bg-section-red: #812929;
+  
+    /* Text Colors */
+    --text-main: var(--color-light);
+    --text-accent: var(--color-accent);
+    --text-highlight: var(--color-highlight);
+  
+    /* Shadows */
+    --shadow-light: rgba(0,0,0,0.1);
+    --shadow-dark: rgba(0,0,0,0.5);
+  
+    /* Borders & Radius */
+    --radius-small: 8px;
+    --radius-medium: 12px;
+    --radius-large: 20px;
+  }
+  
+  /* Example usage */
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+  }
+  

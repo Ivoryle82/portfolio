@@ -8,6 +8,7 @@ import MySpotify from './pages/MySpotify';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import OurCompatibility from './pages/OurCompatibility';
+import LandingPage from './pages/LandingPage';
 
 const App = () => {
   const appStyles = {
@@ -16,16 +17,14 @@ const App = () => {
 
   return (
     <div style={appStyles}>
-      <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage/>} />
           <Route path="/myphotos" element={<MyPhotos />} />
           <Route path="/myspotify" element={<MySpotify />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/compatibility" element={<OurCompatibility />} />
         </Routes>
-      <Footer />
     </div>
   );
 };

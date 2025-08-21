@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Luxurious+Script&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Luxurious+Script&family=Monoton&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Luxurious+Script&family=Monoton&family=Silkscreen:wght@400;700&family=Teko:wght@300..700&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  background-color: #000000;
+}
+
+.page-container {
+  width: 100vw;
+  
+}
+
+.green-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #9ED36C;
+  overflow-x: hidden;
+}
+
+/* Grid Layout for Columns */
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 80% 10%; 
+  grid-template-rows: 100%; /* Fill full height of the container */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+.title{
+  color: black;
+  font-weight: lighter;
+}
+
+.center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  position: relative;
+}
+
+@keyframes neonFlicker {
+  0%, 100% {
+    opacity: 1;
+    filter: brightness(1) drop-shadow(0 0 10px #FF9E9E);
+  }
+  33% {
+    opacity: 0.8;
+    filter: brightness(0.8) drop-shadow(0 0 5px #FF9E9E);
+  }
+  66% {
+    opacity: 0.9;
+    filter: brightness(0.9) drop-shadow(0 0 8px #FF9E9E);
+  }
+}
+
+@keyframes Flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+}
+
+.scribble-music{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  left: 50%;
+
+   /* Animation properties */
+   animation: neonFlicker 2s ease-in-out infinite;
+   animation-delay: 0.5s; /* Delay the start of animation */
+
+}
+.left-column, .right-column {
+  display: flex;
+  height: 100%; 
+
+}
+
+/* Make the Doodles Bigger */
+.ballet-doodle, .dancing-doodle {
+  width: 35vw; 
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  z-index: 1;
+}
+
+.ballet-doodle {
+  transform: translateX(-50%) translateY(10%); 
+}
+
+.dancing-doodle {
+  transform: translateX(-10%) translateY(110%); 
+}
+
+.yellow-random-shape{
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  z-index: 0; 
+  transform: translateX(-30%) translateY(-30%); 
+}
+
+.blue-flower {
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  z-index: 0; 
+  overflow-x: hidden;
+  transform: translateX(-50%) translateY(5%); 
+}
+
+.pink-heart {
+  width: 60vw;
+  height:auto;
+  object-fit: contain;
+  position: absolute;
+  z-index: 0; 
+  overflow-x: hidden;
+  transform: translateX(-60%) translateY(110%); 
+}
+
+/* Center Title Styling */
+.center-title {
+  text-align: center;
+  z-index: 2;
+}
+
+.title {
+  font-family: 'Monoton', 'Arial', sans-serif;
+  font-size: 8.5rem;
+  margin-top: 250px;
+  margin-bottom: 250px;
+  color: rgb(0, 0, 0);
+}
+
+.subtitle {
+  font-family: 'Silkscreen', 'Arial', sans-serif;
+  font-size: 3rem;
+  color: ivory;
+}
+
+
+
+.subtitle {
+  font-size: 3rem;
+  transition: transform 1s ease-in-out;
+}
+
+
+.red-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #812929;
+  border-radius: 70px;
+  text-align: center;
+  display: flex;
+  z-index: -2;
+}
+.scribble-flower{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  top: 20%;
+  right: -20%;
+  
+}
+.scribble-music-3{
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(270deg);
+  width: 300px;
+  height: 300px;
+  bottom: -30%;
+  right: 5%;
+
+  animation: Flicker 2s ease-in-out infinite;
+}
+
+.scribble-music-2{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  bottom: -40%;
+  left: 20%;
+
+  animation: Flicker 2s ease-in-out infinite;
+}
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem; 
+  align-content:center;
+  justify-items: center; 
+}
+
+.album-photo {
+  width: 60%; 
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+}
+
+.album-photo:hover {
+  transform: scale(1.1); 
+}
+
+.brown-circle {
+  position: absolute; 
+  transform: translate(120%,80%); 
+  width: 60%; 
+  height: auto; 
+  border-radius: 50%; 
+  z-index: -1; 
+}
+/* Black background | Black section */
+.black-container {
+  width: 100vw;
+  background-color: black ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.app-intro {
+  width: 80%;
+  color: #60B0FF; 
+  text-align: center;
+}
+
+.app-intro h2 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.step-number {
+  background: #1DB954;
+  color: white;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.step p {
+  margin: 0;
+  font-size: 24px;
+  color: #60B0FF;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #7BFF60;
+}
+
+
+.content-container {
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  
+ 
+  .text-gettoknowme h1 {
+    font-family: Silkscreen;
+    font-size: 6rem;
+    color: #f8adad;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .spotify-container {
+    margin: 10rem;
+    display: flex;
+    position: relative;
+  }
+  
+  .spotify-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .spotify-text h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+  }
+
+  .spotify-text h2 span{
+    color: #f9ff46;
+  }
+  
+  .cta-button-light {
+
+    color: #ccc; /* light text */
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 2rem;
+  }
+  
+  .cta-button-light:hover {
+    color: white;
+    
+  }
+  
+  .spotify-square {
+    width: 600px;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .spotify-square iframe {
+    width: 100%;
+    height: 100%;
+    border: none;   
+    border-radius: 12px;
+  }
+  
+  
+  /* Gallery Section */
+  .gallery-container {
+    margin: 10rem;
+    display: flex;
+    position: relative;
+  }
+  
+  .gallery-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .gallery-text h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: right;
+  }
+
+  .gallery-text h2 span{
+    color: #60B0FF;
+  }
+  
+  .gallery-text .cta-button-light {
+    text-align: right;
+  }
+  
+  .gallery-square {
+    width: 600px;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    filter: grayscale(100%);
+  }
+  
+  /* Work Section */
+  .work-container {
+    margin: 10rem;
+    display: flex;
+    position: relative;
+  }
+  
+  .work-text {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .work-text h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+  }
+  
+
+  .work-square {
+    width: 600px;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+
+/* For mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* Make landing container flex to push footer down */
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet and up */
+@media screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+  }
+
+  .footer-links {
+    margin: 0;
+  }
+}
+
+
+  
+  
+
+
+
