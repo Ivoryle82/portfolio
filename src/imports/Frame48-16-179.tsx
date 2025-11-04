@@ -1,0 +1,13 @@
+import imgChatGptImageAug202025100450Pm13 from "figma:asset/6bd21b152855bda30c46551960c678df5ed51e07.png";
+
+export default function Frame48() {
+  return (
+    <div className="relative size-full">
+      <div
+        className="absolute bg-[92.61%_89.02%] bg-no-repeat bg-size-[429.05%_237.04%] h-[360px] left-0 top-0 w-[298.333px]"
+        data-name="ChatGPT Image Aug 20, 2025, 10_04_50 PM (1) 3"
+        style={{ backgroundImage: `url('${imgChatGptImageAug202025100450Pm13}')` }}
+      />
+    </div>
+  );
+}
