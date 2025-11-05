@@ -64,9 +64,7 @@ export function GalleryPage({ galleryName, onClose, photos }: GalleryPageProps) 
             >
               {galleryName}
             </h1>
-            <p className="text-white text-2xl" style={{ fontFamily: 'Space Grotesk' }}>
-              A collection of moments captured
-            </p>
+
           </div>
         </div>
 

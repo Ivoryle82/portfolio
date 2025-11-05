@@ -884,7 +884,7 @@ function AppContent() {
                         <div className="bg-[#f8f9fa] border-t border-[#e5e8eb] px-10 py-8 w-full">
                           <div className="max-w-4xl mx-auto text-center">
                             <button
-                              onClick={() => handleGalleryClick('Photography')}
+                              onClick={() => handleGalleryClick('My archive of moments')}
                               className="bg-[#000000] hover:bg-[#1a1a1a] text-[#ffffff] px-12 py-4 rounded-[48px] font-bold transition-all duration-200"
                             >
                               See the worlds with me
