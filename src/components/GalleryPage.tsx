@@ -42,7 +42,7 @@ export function GalleryPage({ galleryName, onClose, photos }: GalleryPageProps) 
               {galleryName}
             </h1>
             <p className="text-white/20 text-2xl" style={{ fontFamily: 'Space Grotesk' }}>
-              Move your cursor to reveal the photos
+              Welcome to my gallery
             </p>
           </div>
         </div>

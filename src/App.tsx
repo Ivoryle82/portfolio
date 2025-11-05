@@ -332,7 +332,7 @@ const socialLinks = [
 
 // Gallery Photos Data - mapping gallery categories to their photo collections
 const galleryPhotosData: Record<string, string[]> = {
-  'Photography': photographyImages,
+  'Archives of Moments': photographyImages,
   'UI Designs': [imgGallery1, imgGallery2],
   'Illustrations': [imgGallery3, imgGallery4],
   'Digital Art': [imgGallery1, imgGallery5],
@@ -884,7 +884,7 @@ function AppContent() {
                         <div className="bg-[#f8f9fa] border-t border-[#e5e8eb] px-10 py-8 w-full">
                           <div className="max-w-4xl mx-auto text-center">
                             <button
-                              onClick={() => handleGalleryClick('My archive of moments')}
+                              onClick={() => handleGalleryClick('Archives of Moments')}
                               className="bg-[#000000] hover:bg-[#1a1a1a] text-[#ffffff] px-12 py-4 rounded-[48px] font-bold transition-all duration-200"
                             >
                               See the worlds with me
