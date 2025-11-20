@@ -1,11 +1,1 @@
-
-  # IvoryLe
-
-  This is a code bundle for IvoryLe. The original project is available at https://www.figma.com/design/T3tcwIBunAWTuH8GcfiKFn/IvoryLe.
-
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+Ivory's Le portfolio. It used to be a place for me to display my photos but now you can also see my works here!
